@@ -13,7 +13,8 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Objects;
 
-@RestController("/v2")
+@RestController
+@RequestMapping("/v2")
 @RequiredArgsConstructor
 public class ProductControllerV2 {
     private final ProductDAO productDAO;

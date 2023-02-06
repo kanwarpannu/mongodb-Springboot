@@ -12,7 +12,8 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Objects;
 
-@RestController("/v1")
+@RestController
+@RequestMapping("/v1")
 @RequiredArgsConstructor
 public class ProductController {
     private final ProductRepository productRepository;
