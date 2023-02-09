@@ -1,5 +1,5 @@
 # mongodb-Springboot
 
-Have MongoDB running locally with database name `store` already in it on default port and without basic auth.  
-Controller v1 uses MongoRepository and v2 uses MongoTemplate.  
-The method partial update uses mongoTemplate.  
+Have MongoDB running locally with database name `store` (Refer to attached docker compose file).  
+1. Controller v1 uses `MongoRepository` and v2 uses `MongoTemplate`.  
+2. The method `partialUpdate` uses mongoTemplate.  
