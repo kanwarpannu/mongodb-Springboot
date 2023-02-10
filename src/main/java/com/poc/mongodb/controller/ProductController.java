@@ -30,7 +30,7 @@ public class ProductController {
 
     @GetMapping("/products/{productId}")
     public Product getProduct(@PathVariable String productId) {
-        return productRepository.findById(productId).orElseGet(Product::new);
+        return productRepository.findById(productId).orElse(Product.builder().build());
     }
 
     @PatchMapping("/products/{productId}")
